@@ -1,0 +1,26 @@
+@media screen and (max-width:360px) {
+
+    .Estudio,
+    .Clientes,
+    .Equipos,
+    .Marcas,
+    .Salas,
+    .Grabaciones,
+    .Vivos,
+    .Contacto {
+        font-size: 35px;
+    }
+  
+    .wide {
+        grid-column: auto;
+    }
+  
+    .hero-content>h2 {
+        font-size: 23px;
+    }
+  
+    .hero-content>p {
+        font-size: 13px;
+    }
+  
+  }

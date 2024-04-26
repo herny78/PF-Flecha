@@ -7,13 +7,6 @@
   font-family: "New Rocker", "Poppins", sans-serif;
 }
 
-body {
-  background-color: #272626;
-  font-family: "poppins";
-  color: white;
-  overflow-x: hidden;
-}
-
 header {
   width: 100%;
   height: 100px;
@@ -27,41 +20,6 @@ header {
   height: 50px;
   object-fit: cover;
   border-radius: 10px;
-}
-
-main {
-  width: 100%;
-  justify-content: center;
-  height: 100%;
-}
-
-h2,
-h3,
-h4,
-p {
-  font-family: "poppins";
-}
-
-/* footer de todas las pag. menos el index */
-footer {
-  color: white;
-  padding: 5px;
-  margin-top: 50px;
-  text-align: center;
-}
-
-footer p {
-  font-family: "Poppins", sans-serif;
-}
-
-.Estudio {
-  width: 100%;
-  font-family: "New Rocker", sans-serif;
-  font-size: 71px;
-  color: #fff;
-  padding-bottom: 6px;
-  border-radius: 19%;
-  text-align: center;
 }
 
 .container {
@@ -168,13 +126,17 @@ footer p {
   padding-left: 0;
   /*Le tuve que poner este padding porque el Bs me lo rompio*/
 }
-
 #sidebar .list-items li {
   padding-left: 40px;
   line-height: 50px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid #333;
   transition: all 0.3s ease;
+}
+#sidebar .list-items li:hover {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0px 10px 3px #222;
 }
 
 /* le doy el sombreado a los botones cuando paso por arriba */
@@ -247,7 +209,6 @@ footer p {
   float: right;
   line-height: 100px;
 }
-
 .menu a {
   display: inline-block;
   padding: 10px;
@@ -260,19 +221,19 @@ footer p {
   margin-right: 5px;
   font-weight: 500;
 }
-
-.menu a:hover {
+.menu a :hover {
   border-bottom: 2px solid #242222;
 }
 
-.video_fondo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
+/* footer de todas las pag. menos el index */
+footer {
+  color: white;
+  padding: 5px;
+  margin-top: 50px;
+  text-align: center;
+}
+footer p {
+  font-family: "Poppins", sans-serif;
 }
 
 /* footer solo del index, es para que se quede en la parte de abajo por no tener contenido  */
@@ -284,9 +245,48 @@ footer p {
   bottom: 0;
   width: 100%;
 }
-
 .footer_index p {
   font-family: "Poppins", sans-serif;
+}
+
+main {
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+}
+
+body {
+  background-color: #272626;
+  font-family: "poppins";
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+h2,
+h3,
+h4,
+p {
+  font-family: "poppins";
+}
+
+.Estudio {
+  width: 100%;
+  font-family: "New Rocker", sans-serif;
+  font-size: 71px;
+  color: #ffffff;
+  padding-bottom: 6px;
+  border-radius: 19%;
+  text-align: center;
+}
+
+.video_fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
 }
 
 /* Titulos */
@@ -300,7 +300,7 @@ footer p {
   width: 100%;
   font-family: "New Rocker", sans-serif;
   font-size: 71px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -337,6 +337,108 @@ footer p {
 }
 
 /* FIN CLIENTES */
+/*INICIO EQUIPOS*/
+.hero {
+  display: flex;
+  background-color: black;
+}
+.hero img {
+  width: 50%;
+  height: 600px;
+  object-fit: cover;
+}
+.hero video {
+  width: 50%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.hero-content h2,
+.hero-content p {
+  color: #ffffff;
+  text-align: center;
+  font-family: "poppins";
+}
+
+.hero-content h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.hero-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content a {
+  font-family: "poppins";
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.products {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: black;
+}
+.product img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.product video {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.product-content h2,
+.product-content p {
+  color: #ffffff;
+  text-align: start;
+  font-family: "poppins";
+}
+
+.product-content {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.product-content a {
+  font-family: "poppins";
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+  color: rgb(7, 7, 7);
+  font-size: 24px;
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+.product-content h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+/*FIN EQUIPOS*/
 /* INICIO MARCAS */
 .subtitulo_marcas {
   margin: 30px;
@@ -359,16 +461,14 @@ footer p {
   border: 2px solid black;
   border-radius: 10px;
   overflow: hidden;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0 1px 10px #ffffff;
   transition: all 400ms ease;
 }
-
 .image:hover {
   box-shadow: 5px 5px 20px #ffffff;
   transform: translateY(-4%);
 }
-
 .image img {
   width: 100%;
   height: 100%;
@@ -380,118 +480,6 @@ footer p {
 }
 
 /* FIN MARCAS */
-/*INICIO EQUIPOS*/
-.hero {
-  display: flex;
-  background-color: black;
-}
-
-.hero img {
-  width: 50%;
-  height: 600px;
-  object-fit: cover;
-}
-
-.hero video {
-  width: 50%;
-  height: 600px;
-  object-fit: cover;
-}
-
-.hero-content h2,
-.hero-content p {
-  color: white;
-  text-align: center;
-  font-family: "poppins";
-}
-
-.hero-content h2 {
-  font-size: 40px;
-  font-weight: 500;
-}
-
-.hero-content {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-content a {
-  font-family: "poppins";
-  text-decoration: none;
-  padding: 10px;
-  border: 1px solid white;
-  color: white;
-  font-size: 24px;
-}
-
-.products {
-  display: flex;
-  padding: 20px;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-around;
-}
-
-.product {
-  display: flex;
-  flex-direction: column;
-  width: 320px;
-  background-color: black;
-}
-
-.product img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.product video {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-}
-
-.product-content h2,
-.product-content p {
-  color: white;
-  text-align: start;
-  font-family: "poppins";
-}
-
-.product-content h2 {
-  font-weight: 500;
-}
-
-.product-content h2 {
-  font-size: 24px;
-}
-
-.product-content {
-  display: flex;
-  padding: 20px;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.product-content a {
-  font-family: "poppins";
-  text-decoration: none;
-  padding: 10px;
-  border: 1px solid white;
-  color: rgb(7, 7, 7);
-  font-size: 24px;
-  background-color: white;
-  width: 100%;
-  text-align: center;
-}
-
-/*FIN EQUIPOS*/
 /* INICIO SALAS */
 .subtitulo_salas {
   font-size: 30px;
@@ -532,11 +520,9 @@ footer p {
   flex: 0.25;
   background: beige;
 }
-
 .img-card img {
   min-height: 80vh;
 }
-
 .img-card:hover {
   flex: 2;
   cursor: pointer;
@@ -557,9 +543,8 @@ footer p {
   border: 2px solid black;
   border-radius: 10px;
   overflow: hidden;
-  background-color: white;
+  background-color: #ffffff;
 }
-
 .vid_sala video {
   width: 100%;
   height: 100%;
@@ -571,11 +556,9 @@ footer p {
 .accordion-body {
   display: flex;
 }
-
 .accordion-body p {
   margin: 0 20px;
 }
-
 .accordion-body img {
   width: 50%;
   height: 600px;
@@ -600,7 +583,7 @@ form {
   text-align: center;
   font-family: "poppins";
   margin-bottom: 10px;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 100;
   font-size: 1.3em;
@@ -652,20 +635,18 @@ label {
   background-color: #ddd;
   border: 1px solid #5c5d5f;
 }
-
-.enviar:hover {
+.enviar :hover {
   background: #7e8183;
-  color: white;
+  color: #ffffff;
 }
 
 .borrar {
   background-color: #ddd;
   border: 1px solid #5c5d5f;
 }
-
-.borrar:hover {
+.borrar :hover {
   background: #7e8183;
-  color: white;
+  color: #ffffff;
 }
 
 .botones {

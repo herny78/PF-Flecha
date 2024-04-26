@@ -1,0 +1,28 @@
+/* footer de todas las pag. menos el index */
+
+footer {
+
+    color: white;
+    padding: 5px;
+    margin-top: 50px;
+    text-align: center;
+
+    p {
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+/* footer solo del index, es para que se quede en la parte de abajo por no tener contenido  */
+.footer_index {
+
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    p {
+        font-family: 'Poppins', sans-serif;
+    }
+}

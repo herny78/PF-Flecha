@@ -1,0 +1,49 @@
+/* INICIO MARCAS */
+.subtitulo_marcas {
+    margin: 30px;
+    font-size: 30px;
+}
+
+.parrafo_marcas {
+
+    margin: 30px;
+}
+
+.gallery_marcas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    gap: 20px;
+
+}
+
+.image {
+
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: $colorUno;
+    box-shadow: 0 1px 10px $colorUno;
+    transition: all 400ms ease;
+
+    &:hover {
+        box-shadow: 5px 5px 20px $colorUno;
+        transform: translateY(-4%);
+
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+.wide {
+    grid-column: span 2;
+
+}
+
+/* FIN MARCAS */

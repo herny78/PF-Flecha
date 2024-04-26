@@ -1,0 +1,92 @@
+/* INICIO CONTACTO */
+
+form {
+    margin-top: 500px;
+    font-family: 'poppins';
+    background: transparent;
+    padding: 20px 0;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 55px #fff2;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.subtitulo_contacto {
+    text-align: center;
+    font-family: 'poppins';
+    margin-bottom: 10px;
+    color: $colorUno;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+.form_imput {
+    padding: 6px 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    font-family: 'poppins';
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px #0003;
+    background: transparent;
+    color: #ddd;
+}
+
+textarea {
+    min-width: 100%;
+    min-height: 100px;
+    resize: none;
+    font-family: 'poppins';
+}
+
+label {
+    font-size: 0.9em;
+    font-family: 'poppins';
+    color: #ddd;
+    line-height: 2;
+}
+
+.btn {
+    font-family: 'poppins';
+    border: none;
+    color: black;
+    padding: 14px 28px;
+    margin: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.enviar {
+    background-color: #ddd;
+    border: 1px solid #5c5d5f;
+
+    :hover {
+        background: #7e8183;
+        color: $colorUno;
+    }
+}
+
+.borrar {
+    background-color: #ddd;
+    border: 1px solid #5c5d5f;
+
+    :hover {
+        background: #7e8183;
+        color: $colorUno;
+    }
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+}
+
+/* FIN CONTACTO */
