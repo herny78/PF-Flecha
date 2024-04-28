@@ -1,0 +1,5 @@
+@mixin img($width, $height, $object){
+    width: $width;
+    height: $height;
+    object-fit: $object;
+  }

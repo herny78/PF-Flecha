@@ -258,7 +258,7 @@ main {
 body {
   background-color: #272626;
   font-family: "poppins";
-  color: #ffffff;
+  color: #fff;
   overflow-x: hidden;
 }
 
@@ -273,7 +273,7 @@ p {
   width: 100%;
   font-family: "New Rocker", sans-serif;
   font-size: 71px;
-  color: #ffffff;
+  color: #fff;
   padding-bottom: 6px;
   border-radius: 19%;
   text-align: center;
@@ -300,7 +300,7 @@ p {
   width: 100%;
   font-family: "New Rocker", sans-serif;
   font-size: 71px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -342,12 +342,13 @@ p {
   display: flex;
   background-color: black;
 }
-.hero img {
+.hero video {
   width: 50%;
   height: 600px;
   object-fit: cover;
 }
-.hero video {
+
+.hero > img {
   width: 50%;
   height: 600px;
   object-fit: cover;
@@ -355,7 +356,7 @@ p {
 
 .hero-content h2,
 .hero-content p {
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-family: "poppins";
 }
@@ -378,7 +379,7 @@ p {
   text-decoration: none;
   padding: 10px;
   border: 1px solid white;
-  color: #ffffff;
+  color: #fff;
   font-size: 24px;
 }
 
@@ -396,12 +397,13 @@ p {
   width: 320px;
   background-color: black;
 }
-.product img {
+.product video {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
-.product video {
+
+.product > img {
   width: 100%;
   height: 400px;
   object-fit: cover;
@@ -409,7 +411,7 @@ p {
 
 .product-content h2,
 .product-content p {
-  color: #ffffff;
+  color: #fff;
   text-align: start;
   font-family: "poppins";
 }
@@ -429,7 +431,7 @@ p {
   border: 1px solid white;
   color: rgb(7, 7, 7);
   font-size: 24px;
-  background-color: #ffffff;
+  background-color: #fff;
   width: 100%;
   text-align: center;
 }
@@ -461,15 +463,16 @@ p {
   border: 2px solid black;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #ffffff;
-  box-shadow: 0 1px 10px #ffffff;
+  background-color: #fff;
+  box-shadow: 0 1px 10px #fff;
   transition: all 400ms ease;
 }
 .image:hover {
-  box-shadow: 5px 5px 20px #ffffff;
+  box-shadow: 5px 5px 20px #fff;
   transform: translateY(-4%);
 }
-.image img {
+
+.image > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -543,7 +546,7 @@ p {
   border: 2px solid black;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .vid_sala video {
   width: 100%;
@@ -559,7 +562,8 @@ p {
 .accordion-body p {
   margin: 0 20px;
 }
-.accordion-body img {
+
+.accordion-body > img {
   width: 50%;
   height: 600px;
   object-fit: cover;
@@ -583,7 +587,7 @@ form {
   text-align: center;
   font-family: "poppins";
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 100;
   font-size: 1.3em;
@@ -637,7 +641,7 @@ label {
 }
 .enviar :hover {
   background: #7e8183;
-  color: #ffffff;
+  color: #fff;
 }
 
 .borrar {
@@ -646,7 +650,7 @@ label {
 }
 .borrar :hover {
   background: #7e8183;
-  color: #ffffff;
+  color: #fff;
 }
 
 .botones {
