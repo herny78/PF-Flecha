@@ -12,31 +12,6 @@ footer p {
     font-family: 'Poppins', sans-serif;
 }
 
-.boton-container {
-    position: absolute; 
-    bottom: -40px; 
-    left: 50%; 
-    transform: translateX(-50%);
-}
-
-.boton {
-    display: block;
-    background-color: #070707;
-    color: white;
-    padding: 3px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    width: 120px;
-    margin-bottom: -22px;
-    font-family: 'poppins';
-}
-
-.boton:hover {
-    background-color: #ffffff;
-    color: #070707;
-}
-
 
 /* footer solo del index, es para que se quede en la parte de abajo por no tener contenido  */
 .footer_index {

@@ -7,6 +7,43 @@
   font-family: "New Rocker", "Poppins", sans-serif;
 }
 
+.boton-container {
+  font-size: 16px;
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+  height: 13vh;
+}
+
+.cta-button {
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 0 0 0 var(--accent);
+  outline: 2px solid;
+  color: white;
+  outline-color: white;
+  outline-offset: 0;
+  text-shadow: none;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  max-width: 160px;
+  width: 100%;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  transition: all 550ms cubic-bezier(0.36, 0.63, 0.5, 0.73);
+}
+
+.cta-button:hover {
+  box-shadow: 0 0 0 2px var(--accent);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  color: var(--accent);
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -236,31 +273,6 @@ footer {
 
 footer p {
   font-family: "Poppins", sans-serif;
-}
-
-.boton-container {
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.boton {
-  display: block;
-  background-color: #070707;
-  color: white;
-  padding: 3px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
-  width: 120px;
-  margin-bottom: -22px;
-  font-family: "poppins";
-}
-
-.boton:hover {
-  background-color: #ffffff;
-  color: #070707;
 }
 
 /* footer solo del index, es para que se quede en la parte de abajo por no tener contenido  */
