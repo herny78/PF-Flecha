@@ -737,7 +737,7 @@ label {
 }
 
 /* FIN CONTACTO */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1080px) {
   .Estudio,
   .Clientes,
   .Equipos,
