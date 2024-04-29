@@ -35,5 +35,31 @@
         font-size: 20px;
         font-weight: 400;
     }
+
+    //cambio forma de ver las imagenes en celular
+    .background{
+        display: none;
+    }
+    .banner {
+        width: 94vw;
+        height: 35vh;
+        object-fit: cover;
+        border: 3px solid black;
+        margin: auto;
+        background-size: 100% 100%;
+        animation: banner 12s ease-in-out alternate infinite;
+      }
+      
+       @keyframes banner {
+         0% {background-image: url("../imagen/salas/sala1.webp");}
+         40% {background-image: url("../imagen/salas/sala2.webp");}
+         60% {background-image: url("../imagen/salas/sala3.webp");}
+         80% {background-image: url("../imagen/salas/sala4.webp");}
+         100% {background-image: url("../imagen/salas/sala5.webp");}
+        
+       }
+        
+
+    
   
   }
