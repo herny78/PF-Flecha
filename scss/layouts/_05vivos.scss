@@ -1,5 +1,19 @@
 /* INICIO VIVOS */
 
+.accordion{
+    --bs-accordion-btn-bg: #999;
+    --bs-accordion-active-bg: #555;
+    --bs-accordion-active-color: #fff;
+    --bs-accordion-btn-focus-box-shadow:none;
+    --bs-accordion-bg: #272626;
+    --bs-accordion-color: #fff;
+}
+
+.accordion-button:not(.collapsed ){
+    box-shadow: none;
+}
+
+
 .accordion-body {
     display: flex;
 
@@ -7,12 +21,7 @@
         margin: 0 20px;
     }
 
-    // img {
-    //     width: 50%;
-    //     height: 600px;
-    //     object-fit: cover;
-    // }
-}
+    }
 
 .accordion-body>img {
     @include img(50%, 600px, cover);

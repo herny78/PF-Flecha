@@ -231,9 +231,36 @@ footer {
   padding: 5px;
   margin-top: 50px;
   text-align: center;
+  position: relative;
 }
+
 footer p {
   font-family: "Poppins", sans-serif;
+}
+
+.boton-container {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.boton {
+  display: block;
+  background-color: #070707;
+  color: white;
+  padding: 3px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 120px;
+  margin-bottom: -22px;
+  font-family: "poppins";
+}
+
+.boton:hover {
+  background-color: #ffffff;
+  color: #070707;
 }
 
 /* footer solo del index, es para que se quede en la parte de abajo por no tener contenido  */
@@ -262,6 +289,45 @@ body {
   overflow-x: hidden;
 }
 
+.contenedorAnimadoTotal {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.contenedorAnimado {
+  display: inline-flex;
+}
+
+.contenedorAnimado .estatico {
+  color: #fff;
+  font-size: 63px;
+  font-weight: 600;
+}
+
+.contenedorAnimado .dinamico {
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.dinamico li {
+  color: red;
+  list-style: none;
+  font-size: 50px;
+  font-weight: 600;
+  left: 0;
+  position: relative;
+  top: 0;
+  animation: slide 8s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
 h2,
 h3,
 h4,
@@ -490,8 +556,7 @@ p {
 }
 
 .parrafo_salas {
-  margin-top: 20px;
-  margin: 30px;
+  margin: 20px 30px;
 }
 
 .background {
@@ -556,6 +621,19 @@ p {
 
 /* FIN SALAS */
 /* INICIO VIVOS */
+.accordion {
+  --bs-accordion-btn-bg: #999;
+  --bs-accordion-active-bg: #555;
+  --bs-accordion-active-color: #fff;
+  --bs-accordion-btn-focus-box-shadow:none;
+  --bs-accordion-bg: #272626;
+  --bs-accordion-color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
 .accordion-body {
   display: flex;
 }
@@ -678,6 +756,16 @@ label {
   }
   .hero-content > p {
     font-size: 13px;
+  }
+  .contenedorAnimado .estatico {
+    position: relative;
+    top: 28px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  .dinamico li {
+    font-size: 25px;
+    font-weight: 400;
   }
 }
 

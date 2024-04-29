@@ -27,10 +27,10 @@
 .carousel,
 .carousel-inner>.carousel-item>img {
     @include img(60vw, 60vh, cover);
-    // width: 60vw;
-    // height: 60vh;
-    // object-fit: cover;
     margin: auto;
 }
+
+
+
 
 /* FIN CLIENTES */

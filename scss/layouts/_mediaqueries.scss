@@ -22,5 +22,18 @@
     .hero-content>p {
         font-size: 13px;
     }
+
+    .contenedorAnimado .estatico {
+        position:relative;
+        top: 28px;
+        font-size: 25px;
+        font-weight: 400;
+        
+      }
+
+    .dinamico li {
+        font-size: 25px;
+        font-weight: 400;
+    }
   
   }

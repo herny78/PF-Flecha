@@ -1,26 +1,72 @@
 main {
-    width: 100%;
-    justify-content: center;
-    height: 100%;
-  }
-
-  body {
-    background-color: #272626;
-    font-family: 'poppins';
-    color: $colorUno;
-    overflow-x: hidden;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  
 }
+body {
+  background-color: #272626;
+  font-family: "poppins";
+  color: $colorUno;
+  overflow-x: hidden;
+  
+}
+
+//Inicio animacion de subtitulo
+
+.contenedorAnimadoTotal {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+
+.contenedorAnimado {
+  display: inline-flex;
+}
+
+.contenedorAnimado .estatico {
+  color: #fff;
+  font-size: 63px;
+  font-weight: 600;
+  
+}
+
+.contenedorAnimado .dinamico {
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.dinamico li {
+  color: red;
+  list-style: none;
+  font-size: 50px;
+  font-weight: 600;
+  left: 0;
+  position: relative;
+  top: 0;
+  animation: slide 8s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+//Fin animacion de subtitulo
 
 h2,
 h3,
 h4,
 p {
-    font-family: 'poppins';
+  font-family: "poppins";
 }
 
 .Estudio {
   width: 100%;
-  font-family: 'New Rocker', sans-serif;
+  font-family: "New Rocker", sans-serif;
   font-size: 71px;
   color: $colorUno;
   padding-bottom: 6px;
@@ -47,11 +93,10 @@ p {
 .Grabaciones,
 .Vivos,
 .Contacto {
-    width: 100%;
-    font-family: 'New Rocker', sans-serif;
-    font-size: 71px;
-    color: $colorUno;
-    text-align: center;
-    margin-bottom: 40px;
+  width: 100%;
+  font-family: "New Rocker", sans-serif;
+  font-size: 71px;
+  color: $colorUno;
+  text-align: center;
+  margin-bottom: 40px;
 }
-
