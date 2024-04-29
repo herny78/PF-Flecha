@@ -292,7 +292,7 @@ body {
 .contenedorAnimadoTotal {
   display: flex;
   justify-content: center;
-  min-height: 66vh;
+  min-height: 100%;
 }
 
 .contenedorAnimado {
