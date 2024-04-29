@@ -1,4 +1,4 @@
-@media only screen and (max-width:1080px) {
+@media only screen and (max-width:767px) {
 
     .Estudio,
     .Clientes,
@@ -25,14 +25,14 @@
 
     .contenedorAnimado .estatico {
         position:relative;
-        top: 28px;
-        font-size: 25px;
+        top: 30px;
+        font-size: 20px;
         font-weight: 400;
         
       }
 
     .dinamico li {
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 400;
     }
   
