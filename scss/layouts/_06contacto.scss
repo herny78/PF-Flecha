@@ -68,8 +68,8 @@ label {
     background-color: #ddd;
     border: 1px solid #5c5d5f;
 
-    :hover {
-        background: #7e8183;
+    &:hover {
+        background: #343435;
         color: $colorUno;
     }
 }
@@ -78,8 +78,8 @@ label {
     background-color: #ddd;
     border: 1px solid #5c5d5f;
 
-    :hover {
-        background: #7e8183;
+    &:hover {
+        background: #343435;
         color: $colorUno;
     }
 }

@@ -7,6 +7,7 @@
   font-family: "New Rocker", "Poppins", sans-serif;
 }
 
+/*boton*/
 .boton-container {
   font-size: 16px;
   background-color: var(--background);
@@ -36,7 +37,6 @@
   justify-content: center;
   transition: all 550ms cubic-bezier(0.36, 0.63, 0.5, 0.73);
 }
-
 .cta-button:hover {
   box-shadow: 0 0 0 2px var(--accent);
   outline-color: rgba(255, 255, 255, 0);
@@ -44,6 +44,8 @@
   color: var(--accent);
 }
 
+/*boton*/
+/*header*/
 header {
   width: 100%;
   height: 100px;
@@ -66,9 +68,8 @@ header {
   position: relative;
   overflow: visible;
   z-index: 999;
+  /* boton menu */
 }
-
-/* boton menu */
 .container .menu-btn {
   position: absolute;
   left: 20px;
@@ -262,6 +263,8 @@ header {
   border-bottom: 2px solid #242222;
 }
 
+/*header*/
+/*footer*/
 /* footer de todas las pag. menos el index */
 footer {
   color: white;
@@ -288,6 +291,8 @@ footer p {
   font-family: "Poppins", sans-serif;
 }
 
+/*footer*/
+/*inicio*/
 main {
   width: 100%;
   justify-content: center;
@@ -396,8 +401,7 @@ p {
   font-family: "poppins";
   font-size: 30px;
 }
-
-.carousel-caption > p {
+.carousel-caption > h5 p {
   font-family: "poppins";
   font-size: 16px;
 }
@@ -432,18 +436,6 @@ p {
   object-fit: cover;
 }
 
-.hero-content h2,
-.hero-content p {
-  color: #fff;
-  text-align: center;
-  font-family: "poppins";
-}
-
-.hero-content h2 {
-  font-size: 40px;
-  font-weight: 500;
-}
-
 .hero-content {
   padding: 30px;
   display: flex;
@@ -451,6 +443,17 @@ p {
   gap: 15px;
   justify-content: center;
   align-items: center;
+}
+.hero-content h2,
+.hero-content p {
+  color: #fff;
+  text-align: center;
+  font-family: "poppins";
+}
+.hero-content h2 h2,
+.hero-content p h2 {
+  font-size: 40px;
+  font-weight: 500;
 }
 .hero-content a {
   font-family: "poppins";
@@ -487,13 +490,6 @@ p {
   object-fit: cover;
 }
 
-.product-content h2,
-.product-content p {
-  color: #fff;
-  text-align: start;
-  font-family: "poppins";
-}
-
 .product-content {
   display: flex;
   padding: 20px;
@@ -501,6 +497,11 @@ p {
   gap: 10px;
   justify-content: center;
   align-items: flex-start;
+}
+.product-content h2, .product-content p {
+  color: #fff;
+  text-align: start;
+  font-family: "poppins";
 }
 .product-content a {
   font-family: "poppins";
@@ -729,8 +730,8 @@ label {
   background-color: #ddd;
   border: 1px solid #5c5d5f;
 }
-.enviar :hover {
-  background: #7e8183;
+.enviar:hover {
+  background: #343435;
   color: #fff;
 }
 
@@ -738,8 +739,8 @@ label {
   background-color: #ddd;
   border: 1px solid #5c5d5f;
 }
-.borrar :hover {
-  background: #7e8183;
+.borrar:hover {
+  background: #343435;
   color: #fff;
 }
 
@@ -749,6 +750,7 @@ label {
 }
 
 /* FIN CONTACTO */
+/*inicio media queries*/
 @media only screen and (max-width: 767px) {
   .Estudio,
   .Clientes,
@@ -772,11 +774,11 @@ label {
   .contenedorAnimado .estatico {
     position: relative;
     top: 30px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
   }
   .dinamico li {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
   }
   .background {
@@ -810,5 +812,6 @@ label {
     }
   }
 }
+/*fin media queries*/
 
 /*# sourceMappingURL=style.css.map */

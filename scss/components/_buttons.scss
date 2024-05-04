@@ -1,3 +1,5 @@
+
+/*boton*/
 .boton-container {
     font-size: 16px;
     background-color: var(--background);
@@ -19,7 +21,6 @@
     line-height: 2.5rem;
     max-width: 160px;
     width: 100%;
-    //letter-spacing: 0.3rem;
     font-weight: 600;
     position: relative;
     text-decoration: none;
@@ -27,11 +28,14 @@
     display: flex;
     justify-content: center;
     transition: all 550ms cubic-bezier(.36, .63, .5, .73);
-}
+    
+    &:hover {
+        box-shadow: 0 0 0 2px var(--accent);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+        color: var(--accent);
+    }
 
-.cta-button:hover {
-    box-shadow: 0 0 0 2px var(--accent);
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 15px;
-    color: var(--accent);
 }
+/*boton*/
+

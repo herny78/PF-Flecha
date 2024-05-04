@@ -1,100 +1,72 @@
 /*INICIO EQUIPOS*/
 
 .hero {
+  display: flex;
+  background-color: black;
 
-    display: flex;
-    background-color: black;
-    //@include img(50%, 600px, cover);
-    
-    //  img {
-    //     width: 50%;
-    //      height: 600px;
-    //      object-fit: cover;
-    //  }
-
-    video {
-        width: 50%;
-        height: 600px;
-        object-fit: cover;
-    }
+  video {
+    width: 50%;
+    height: 600px;
+    object-fit: cover;
+  }
 }
 
-.hero>img {
-    @include img(50%, 600px, cover);
-}
-
-
-
-
-.hero-content h2,
-.hero-content p {
-    color: $colorUno;
-    text-align: center;
-    font-family: 'poppins';
-}
-
-.hero-content h2 {
-    font-size: 40px;
-    font-weight: 500;
+.hero > img {
+  @include img(50%, 600px, cover);
 }
 
 .hero-content {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
 
-    a {
-        font-family: 'poppins';
-        text-decoration: none;
-        padding: 10px;
-        border: 1px solid white;
-        color: $colorUno;
-        font-size: 24px;
+  h2,
+  p {
+    color: $colorUno;
+    text-align: center;
+    font-family: "poppins";
+
+    h2 {
+      font-size: 40px;
+      font-weight: 500;
     }
+  }
+  a {
+    font-family: "poppins";
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    color: $colorUno;
+    font-size: 24px;
+  }
 }
 
 .products {
-    display: flex;
-    padding: 20px;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
 }
 
 .product {
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: black;
 
-
-    //@include img(100%, 400px, cover);
-
-    // img {
-    //     width: 100%;
-    //     height: 400px;
-    //     object-fit: cover;
-    // }
-
-    video {
-        width: 100%;
-        height: 400px;
-        object-fit: cover;
-    }
+  video {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
 }
 
-.product>img {
-    @include img(100%, 400px, cover);
-}
-
-.product-content h2,
-.product-content p {
-    color: $colorUno;
-    text-align: start;
-    font-family: 'poppins';
+.product > img {
+  @include img(100%, 400px, cover);
 }
 
 .product-content {
@@ -104,9 +76,13 @@
     gap: 10px;
     justify-content: center;
     align-items: flex-start;
-
+    h2, p {
+     color: $colorUno;
+     text-align: start;
+     font-family: "poppins";
+    }
     a {
-        font-family: 'poppins';
+        font-family: "poppins";
         text-decoration: none;
         padding: 10px;
         border: 1px solid white;
@@ -115,12 +91,12 @@
         background-color: $colorUno;
         width: 100%;
         text-align: center;
-    }
-
+      }
+    
     h2 {
         font-weight: 500;
         font-size: 24px;
-    }
+      }
 }
 
 /*FIN EQUIPOS*/

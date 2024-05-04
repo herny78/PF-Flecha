@@ -1,37 +1,30 @@
 /* INICIO CLIENTES */
 
 .subtitulo_clientes {
-
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .parrafo_clientes {
-    margin: 30px;
-  
+  margin: 30px;
 }
 
-.carousel-caption>h5 {
-    font-family: 'poppins';
-    font-size: 30px;
-}
-
-.carousel-caption>p {
-    font-family: 'poppins';
+.carousel-caption > h5 {
+  font-family: "poppins";
+  font-size: 30px;
+  p {
+    font-family: "poppins";
     font-size: 16px;
+  }
 }
 
 .carousel {
-    margin: 150px 150px;
-
+  margin: 150px 150px;
 }
 
 .carousel,
-.carousel-inner>.carousel-item>img {
-    @include img(60vw, 60vh, cover);
-    margin: auto;
+.carousel-inner > .carousel-item > img {
+  @include img(60vw, 60vh, cover);
+  margin: auto;
 }
-
-
-
 
 /* FIN CLIENTES */

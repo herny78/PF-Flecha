@@ -1,66 +1,73 @@
-@media only screen and (max-width:767px) {
+/*inicio media queries*/
 
-    .Estudio,
-    .Clientes,
-    .Equipos,
-    .Marcas,
-    .Salas,
-    .Grabaciones,
-    .Vivos,
-    .Contacto {
-        font-size: 35px;
-    }
-  
-    .wide {
-        grid-column: auto;
-    }
-  
-    .hero-content>h2 {
-        font-size: 23px;
-    }
-  
-    .hero-content>p {
-        font-size: 13px;
-    }
-
-    .contenedorAnimado .estatico {
-        position:relative;
-        top: 30px;
-        font-size: 20px;
-        font-weight: 400;
-        
-      }
-
-    .dinamico li {
-        font-size: 20px;
-        font-weight: 400;
-    }
-
-    //cambio forma de ver las imagenes en celular
-    .background{
-        display: none;
-    }
-    .banner {
-        width: 94vw;
-        height: 35vh;
-        object-fit: cover;
-        border: 3px solid black;
-        border-radius: 15px;
-        margin: auto;
-        background-size: 100% 100%;
-        animation: banner 12s ease-in-out alternate infinite;
-      }
-      
-       @keyframes banner {
-         0% {background-image: url("../imagen/salas/sala1.webp");}
-         40% {background-image: url("../imagen/salas/sala2.webp");}
-         60% {background-image: url("../imagen/salas/sala3.webp");}
-         80% {background-image: url("../imagen/salas/sala4.webp");}
-         100% {background-image: url("../imagen/salas/sala5.webp");}
-        
-       }
-        
-
-    
-  
+@media only screen and (max-width: 767px) {
+  .Estudio,
+  .Clientes,
+  .Equipos,
+  .Marcas,
+  .Salas,
+  .Grabaciones,
+  .Vivos,
+  .Contacto {
+    font-size: 35px;
   }
+
+  .wide {
+    grid-column: auto;
+  }
+
+  .hero-content > h2 {
+    font-size: 23px;
+  }
+
+  .hero-content > p {
+    font-size: 13px;
+  }
+
+  .contenedorAnimado .estatico {
+    position: relative;
+    top: 30px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .dinamico li {
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  //cambio forma de ver las imagenes en celular
+  .background {
+    display: none;
+  }
+  .banner {
+    width: 94vw;
+    height: 35vh;
+    object-fit: cover;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: auto;
+    background-size: 100% 100%;
+    animation: banner 12s ease-in-out alternate infinite;
+  }
+
+  @keyframes banner {
+    0% {
+      background-image: url("../imagen/salas/sala1.webp");
+    }
+    40% {
+      background-image: url("../imagen/salas/sala2.webp");
+    }
+    60% {
+      background-image: url("../imagen/salas/sala3.webp");
+    }
+    80% {
+      background-image: url("../imagen/salas/sala4.webp");
+    }
+    100% {
+      background-image: url("../imagen/salas/sala5.webp");
+    }
+  }
+}
+
+/*fin media queries*/
