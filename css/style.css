@@ -316,7 +316,7 @@ footer p {
 /*footer*/
 /*EFECTO TITULO*/
 .titulo {
-  text-transfrom: uppercase;
+  text-transform: uppercase;
   margin: 15px;
   color: white;
   font-size: 4.5em;
@@ -349,7 +349,7 @@ body {
 
 /*EFECTO TITULO*/
 .Estudio {
-  text-transfrom: uppercase;
+  text-transform: uppercase;
   color: white;
   font-size: 6em;
   text-align: center;
@@ -604,7 +604,6 @@ p {
   display: block;
   position: relative;
   overflow: hidden;
-  /* box-shadow: 0 0 6px rgba(0, 0, 0, .5); */
   height: 100%;
   width: 100%;
   border-radius: 15px;
@@ -638,13 +637,19 @@ p {
   justify-content: center;
   align-items: center;
   transform: scale(0);
-  /* opacity: 0;
-  transition: transform 0.5s ease-in-out; */
+}
+
+.parrafo_lightbox {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  text-align: center;
 }
 
 .light-box img {
-  width: 35vw;
-  max-height: 70vh;
+  width: 45vw;
+  max-height: 80vh;
 }
 
 .light-box:target {
