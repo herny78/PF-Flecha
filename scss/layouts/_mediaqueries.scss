@@ -1,14 +1,7 @@
 /*inicio media queries*/
 
-@media only screen and (max-width: 767px) {
-  .Estudio,
-  .Clientes,
-  .Equipos,
-  .Marcas,
-  .Salas,
-  .Grabaciones,
-  .Vivos,
-  .Contacto {
+@media only screen and (max-width: 600px) {
+  .titulo {
     font-size: 35px;
   }
 

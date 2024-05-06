@@ -263,6 +263,28 @@ header {
   border-bottom: 2px solid #242222;
 }
 
+.menu-btn:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffffff;
+}
+
+.menu-btn:hover {
+  color: #ffffff;
+  box-shadow: 0 0 7px #ffffff;
+  text-shadow: 0 0 7px #ffffff;
+}
+
+.icons > a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffffff;
+}
+
+.icons > a:hover {
+  color: #ffffff;
+  box-shadow: 0 0 7px #ffffff;
+  text-shadow: 0 0 7px #ffffff;
+}
+
 /*header*/
 /*footer*/
 /* footer de todas las pag. menos el index */
@@ -292,6 +314,25 @@ footer p {
 }
 
 /*footer*/
+/*EFECTO TITULO*/
+.titulo {
+  text-transfrom: uppercase;
+  margin: 15px;
+  color: white;
+  font-size: 4.5em;
+  text-align: center;
+  animation: neon 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 22px rgba(255, 255, 255, 0.8), 0 0 40px rgba(66, 220, 219, 0.8), 0 0 60px rgba(66, 220, 219, 0.8), 0 0 80px rgba(66, 220, 219, 0.5), 0 0 100px rgba(66, 220, 219, 0.5), 0 0 140px rgba(66, 220, 219, 0.5), 0 0 200px rgba(66, 220, 219, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(66, 220, 219, 0.8), 0 0 30px rgba(66, 220, 219, 0.8), 0 0 40px rgba(66, 220, 219, 0.8), 0 0 50px rgba(66, 220, 219, 0.5), 0 0 80px rgba(66, 220, 219, 0.5);
+  }
+}
+/*EFECTO TITULO*/
 /*inicio*/
 main {
   width: 100%;
@@ -306,6 +347,24 @@ body {
   overflow-x: hidden;
 }
 
+/*EFECTO TITULO*/
+.Estudio {
+  text-transfrom: uppercase;
+  color: white;
+  font-size: 6em;
+  text-align: center;
+  animation: neon 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 22px rgba(255, 255, 255, 0.8), 0 0 40px rgba(66, 220, 219, 0.8), 0 0 60px rgba(66, 220, 219, 0.8), 0 0 80px rgba(66, 220, 219, 0.5), 0 0 100px rgba(66, 220, 219, 0.5), 0 0 140px rgba(66, 220, 219, 0.5), 0 0 200px rgba(66, 220, 219, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.8), 0 0 8px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(66, 220, 219, 0.8), 0 0 30px rgba(66, 220, 219, 0.8), 0 0 40px rgba(66, 220, 219, 0.8), 0 0 50px rgba(66, 220, 219, 0.5), 0 0 80px rgba(66, 220, 219, 0.5);
+  }
+}
+/*EFECTO TITULO*/
 .contenedorAnimadoTotal {
   display: flex;
   justify-content: center;
@@ -530,38 +589,94 @@ p {
   margin: 30px;
 }
 
-.gallery_marcas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  padding: 20px;
-  gap: 20px;
-}
-
-.image {
-  height: 400px;
-  border: 2px solid black;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: #fff;
-  box-shadow: 0 1px 10px #fff;
-  transition: all 400ms ease;
-}
-.image:hover {
-  box-shadow: 5px 5px 20px #fff;
-  transform: translateY(-4%);
-}
-
-.image > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.wide {
-  grid-column: span 2;
-}
-
 /* FIN MARCAS */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  width: 95%;
+  margin: auto;
+  gap: 10px;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+.galeria > a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, .5); */
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.galeria img {
+  width: 100%;
+  vertical-align: top;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s;
+  box-shadow: 0 1 6px rgba(0, 0, 0, 0.5);
+}
+
+.galeria a:hover img {
+  filter: blur(2px);
+  transform: rotate(10deg) scale(1.3);
+}
+
+.light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  /* opacity: 0;
+  transition: transform 0.5s ease-in-out; */
+}
+
+.light-box img {
+  width: 35vw;
+  max-height: 70vh;
+}
+
+.light-box:target {
+  transform: scale(1);
+}
+
+.close {
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.next {
+  display: block;
+  color: #fff;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
 /* INICIO SALAS */
 .subtitulo_salas {
   font-size: 30px;
@@ -751,15 +866,8 @@ label {
 
 /* FIN CONTACTO */
 /*inicio media queries*/
-@media only screen and (max-width: 767px) {
-  .Estudio,
-  .Clientes,
-  .Equipos,
-  .Marcas,
-  .Salas,
-  .Grabaciones,
-  .Vivos,
-  .Contacto {
+@media only screen and (max-width: 600px) {
+  .titulo {
     font-size: 35px;
   }
   .wide {
