@@ -13,6 +13,32 @@ body {
   overflow-x: hidden;
   
 }
+h2,
+h3,
+h4,
+p {
+  font-family: "poppins";
+}
+
+.Estudio {
+  width: 100%;
+  font-family: "New Rocker", sans-serif;
+  font-size: 71px;
+  color: $colorUno;
+  padding-bottom: 6px;
+  border-radius: 19%;
+  text-align: center;
+}
+
+.video_fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
 
 /*EFECTO TITULO*/
 .Estudio {
@@ -81,42 +107,11 @@ body {
 
 //Fin animacion de subtitulo
 
-h2,
-h3,
-h4,
-p {
-  font-family: "poppins";
-}
 
-.Estudio {
-  width: 100%;
-  font-family: "New Rocker", sans-serif;
-  font-size: 71px;
-  color: $colorUno;
-  padding-bottom: 6px;
-  border-radius: 19%;
-  text-align: center;
-}
-
-.video_fondo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-}
 
 /* Titulos */
 
-.Clientes,
-.Equipos,
-.Marcas,
-.Salas,
-.Grabaciones,
-.Vivos,
-.Contacto {
+.titulo {
   width: 100%;
   font-family: "New Rocker", sans-serif;
   font-size: 71px;

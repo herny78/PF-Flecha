@@ -17,7 +17,7 @@
 }
 
 .cta-button {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-shadow: 0 0 0 0 var(--accent);
   outline: 2px solid;
   color: white;
@@ -347,6 +347,33 @@ body {
   overflow-x: hidden;
 }
 
+h2,
+h3,
+h4,
+p {
+  font-family: "poppins";
+}
+
+.Estudio {
+  width: 100%;
+  font-family: "New Rocker", sans-serif;
+  font-size: 71px;
+  color: #fff;
+  padding-bottom: 6px;
+  border-radius: 19%;
+  text-align: center;
+}
+
+.video_fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
 /*EFECTO TITULO*/
 .Estudio {
   text-transform: uppercase;
@@ -404,41 +431,8 @@ body {
     top: -360px;
   }
 }
-h2,
-h3,
-h4,
-p {
-  font-family: "poppins";
-}
-
-.Estudio {
-  width: 100%;
-  font-family: "New Rocker", sans-serif;
-  font-size: 71px;
-  color: #fff;
-  padding-bottom: 6px;
-  border-radius: 19%;
-  text-align: center;
-}
-
-.video_fondo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-}
-
 /* Titulos */
-.Clientes,
-.Equipos,
-.Marcas,
-.Salas,
-.Grabaciones,
-.Vivos,
-.Contacto {
+.titulo {
   width: 100%;
   font-family: "New Rocker", sans-serif;
   font-size: 71px;
@@ -589,7 +583,6 @@ p {
   margin: 30px;
 }
 
-/* FIN MARCAS */
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -682,6 +675,7 @@ p {
   text-decoration: none;
 }
 
+/* FIN MARCAS */
 /* INICIO SALAS */
 .subtitulo_salas {
   font-size: 30px;
