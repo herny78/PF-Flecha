@@ -8,13 +8,15 @@
   margin: 30px;
 }
 
-.carousel-caption > h5 {
+.carousel-item > h5 {
+  text-align: center;
   font-family: "poppins";
   font-size: 30px;
-  p {
-    font-family: "poppins";
-    font-size: 16px;
-  }
+  // p {
+  //   text-align: center;
+  //   font-family: "poppins";
+  //   font-size: 16px;
+  // }
 }
 
 .carousel {
@@ -28,3 +30,14 @@
 }
 
 /* FIN CLIENTES */
+
+// .spotify {
+//   //display: none;
+//   align-items: flex-end
+// }
+
+.iframe-spotify {
+  
+  text-align: center;
+
+}
