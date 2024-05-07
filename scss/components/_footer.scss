@@ -14,6 +14,16 @@ footer p {
     font-family: 'Poppins', sans-serif;
 }
 
+/*footer exclusivo de clientes, por un problema que no pude detectar, al agregar las lista de spotify me subio el footer*/
+
+.footer_clientes {
+    color: white;
+    padding: 5px;
+    margin-top: 450px;
+    text-align: center;
+    // position: relative;
+}
+
 
 /* footer solo del index, es para que se quede en la parte de abajo por no tener contenido  */
 .footer_index {
