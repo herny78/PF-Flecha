@@ -223,27 +223,27 @@ header {
 }
 
 //efecto de boton de apertura y cierre del menu
-.menu-btn:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #ffffff;
-  }
+// .menu-btn:hover::before {
+//     transform: scale(1.1);
+//     box-shadow: 0 0 15px #ffffff;
+//   }
   
-.menu-btn:hover {
-    color: #ffffff;
-    box-shadow: 0 0 7px #ffffff;
-    text-shadow: 0 0 7px #ffffff;
-  }
+// .menu-btn:hover {
+//     color: #ffffff;
+//     box-shadow: 0 0 7px #ffffff;
+//     text-shadow: 0 0 7px #ffffff;
+//   }
 //efecto sobre botones de redes
-.icons>a:hover::before {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #ffffff;
-  }
+// .icons>a:hover::before {
+//     transform: scale(1.1);
+//     box-shadow: 0 0 15px #ffffff;
+//   }
   
-.icons>a:hover {
-    color: #ffffff;
-    box-shadow: 0 0 7px #ffffff;
-    text-shadow: 0 0 7px #ffffff;
-  }
+// .icons>a:hover {
+//     color: #ffffff;
+//     box-shadow: 0 0 7px #ffffff;
+//     text-shadow: 0 0 7px #ffffff;
+//   }
 
 
 /*header*/

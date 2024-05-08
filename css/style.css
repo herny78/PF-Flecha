@@ -263,28 +263,6 @@ header {
   border-bottom: 2px solid #242222;
 }
 
-.menu-btn:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #ffffff;
-}
-
-.menu-btn:hover {
-  color: #ffffff;
-  box-shadow: 0 0 7px #ffffff;
-  text-shadow: 0 0 7px #ffffff;
-}
-
-.icons > a:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #ffffff;
-}
-
-.icons > a:hover {
-  color: #ffffff;
-  box-shadow: 0 0 7px #ffffff;
-  text-shadow: 0 0 7px #ffffff;
-}
-
 /*header*/
 /*footer*/
 /* footer de todas las pag. menos el index */
@@ -324,7 +302,6 @@ footer p {
 /*EFECTO TITULO*/
 .titulo {
   text-transform: uppercase;
-  margin: 15px;
   color: white;
   font-size: 4.5em;
   text-align: center;
@@ -476,11 +453,11 @@ p {
   margin: auto;
 }
 
-/* FIN CLIENTES */
 .iframe-spotify {
   text-align: center;
 }
 
+/* FIN CLIENTES */
 /*INICIO EQUIPOS*/
 .hero {
   display: flex;
@@ -631,7 +608,7 @@ p {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   width: 100%;
   height: 100vh;
   z-index: 1000;
